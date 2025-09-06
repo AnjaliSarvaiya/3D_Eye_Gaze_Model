@@ -1,7 +1,9 @@
 **Getting Started**
 **Installation**
 •	The code requires `python>=3.7`, as well as PyTorch and TorchVision. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
+
 •	The following part gives more guidance for the installation and conda environment creation.
+
 conda create -n 3d_gaze python=3.7.1
 pip install ipython ipykernel
 pip install ipympl
@@ -23,7 +25,9 @@ pip install pandas
 
 **Dataset Preparation**
 •	First download the code, and the dataset.
+
 •	After downloading the dataset, the data generation process should be completed.
+
 •	After downloading the dataset keep the videos in Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/VIDEOS/ and
  keep the annotations in  Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/ANNOTATIONS/
 •	To extract the necessary images for the training and testing for the video recording the Python file /data_generation/Extract_TEyeD.py should be run.
