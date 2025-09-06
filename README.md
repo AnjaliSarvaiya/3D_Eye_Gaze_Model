@@ -1,5 +1,5 @@
-Getting Started
-	Installation
+**Getting Started**
+**Installation**
 •	The code requires `python>=3.7`, as well as PyTorch and TorchVision. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
 •	The following part gives more guidance for the installation and conda environment creation.
 conda create -n 3d_gaze python=3.7.1
@@ -21,9 +21,7 @@ pip install wandb
 pip install timm
 pip install pandas
 
-
-
-	Dataset Preparation
+**Dataset Preparation**
 •	First download the code, and the dataset.
 •	After downloading the dataset, the data generation process should be completed.
 •	After downloading the dataset keep the videos in Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/VIDEOS/ and
@@ -39,7 +37,7 @@ python createDataloaders_baseline.py \
 --out "cur_objs/one_vs_one/cond_TEyeD.pkl"
 •	Finally, you can customize and change arguments in args_maker.py file, like the optimizer, learning rates, weight decay, weight for losses, activate different heads (segmentation or rendering) etc.
 
-	Training run script:
+**Training run script:**
 •	To be able to run and train code the following command must to executed. The entry script is the run.py.
 python -u run.py \
 --exp_name='3D_eye_framework' \
@@ -88,7 +86,7 @@ python -u run.py \
 
 •	After running this script the .pth file is saved in Results/results folder.
 
-	Testing run script:
+**Testing run script:**
 •	The check point given by the Author is stored at Results/pretrain_sem/results/last.pt
 •	To be able to run and test code the following command must to executed. The entry script is the run.py.
 python -u run.py \
@@ -108,7 +106,7 @@ python -u run.py \
 
 •	After running this code it will save test_results.h5 file in Results/pretrained_sem/results folder
 
-	Visualization on Testing Data:
+**Visualization on Testing Data:**
 
 •	To be able to run and visualization code the following command must to executed. 
 python viz_from_testh5.py \
