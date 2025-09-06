@@ -39,6 +39,7 @@ python createDataloaders_baseline.py \
 
 **Training run script:**
 •	To be able to run and train code the following command must to executed. The entry script is the run.py.
+
 python -u run.py \
 --exp_name='3D_eye_framework' \
 --path_data=". /Datasets/All" \
