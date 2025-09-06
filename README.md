@@ -2,6 +2,7 @@
 **Installation**
 •	The code requires `python>=3.7`, as well as PyTorch and TorchVision. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
 •	The following part gives more guidance for the installation and conda environment creation.
+
 conda create -n 3d_gaze python=3.7.1
 pip install ipython ipykernel
 pip install ipympl
