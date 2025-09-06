@@ -15,17 +15,29 @@ pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f htt
 pip install h5py
 
 pip install -U scikit-learn
+
 pip install scikit-image
+
 pip install matplotlib
+
 pip install opencv-python
+
 pip install tensorboardX
+
 pip install imgaug
+
 pip install faiss-gpu
+
 pip install pytorch3d
+
 pip install pytransform3d
+
 pip install einops
+
 pip install wandb
+
 pip install timm
+
 pip install pandas
 
 **Dataset Preparation**
@@ -35,18 +47,25 @@ pip install pandas
 
 •	After downloading the dataset keep the videos in Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/VIDEOS/ and
  keep the annotations in  Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/ANNOTATIONS/
+ 
 •	To extract the necessary images for the training and testing for the video recording the Python file /data_generation/Extract_TEyeD.py should be run.
+
 •	After processing the recordings, the data split has to be performed. The specifications of the recording's names that are used for training and testing are mentioned in the /cur_objs/datasetSelections.py. It will save datasetSelections.pkl file
+
 •	To generate the training, validation and testing dataset .pkl file you need to run the following python file cur_objs/createDataloaders_baseline.py. It will save cond_TEyeD.pkl file in cur_objs/one_vs_one/. This pkl file contains splitting of the dataset in training, validation and testing dataset
+
 •	To run createDataloaders_baseline.py  run the code
+
 python createDataloaders_baseline.py \
 --path2data “path_to_Datasets_folder” \
 --ratios "0.7,0.15,0.15" \
 --seed 42 \
 --out "cur_objs/one_vs_one/cond_TEyeD.pkl"
+
 •	Finally, you can customize and change arguments in args_maker.py file, like the optimizer, learning rates, weight decay, weight for losses, activate different heads (segmentation or rendering) etc.
 
 **Training run script:**
+
 •	To be able to run and train code the following command must to executed. The entry script is the run.py.
 
 python -u run.py \
@@ -97,8 +116,11 @@ python -u run.py \
 •	After running this script the .pth file is saved in Results/results folder.
 
 **Testing run script:**
+
 •	The check point given by the Author is stored at Results/pretrain_sem/results/last.pt
+
 •	To be able to run and test code the following command must to executed. The entry script is the run.py.
+
 python -u run.py \
 --path_data=". /Datasets/All" \  
 --path2MasterKey=". /Datasets/MasterKey" \  
@@ -119,12 +141,14 @@ python -u run.py \
 **Visualization on Testing Data:**
 
 •	To be able to run and visualization code the following command must to executed. 
+
 python viz_from_testh5.py \
   --test_h5 ". /Results/pretrained_sem/results/test_results.h5" \
   --out_dir " ./Results/pretrained_sem/results/visual" \
   --limit 32 \
   --cols 4 \
   --overlay pred \ 
-  --origin pred \
+  --origin pred 
+  
 •	It will save the visual grid in  /Results/pretrained_sem/results/visual folder.
 
