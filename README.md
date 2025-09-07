@@ -47,6 +47,8 @@ pip install pandas
 
 •	After downloading the dataset keep the videos in Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/VIDEOS/ and
  keep the annotations in  Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/ANNOTATIONS/
+
+ To reproduce the results, I have provided the Datasets folder which contains the dataset set videos and annotations. you can download Datasets folder from this link and use it in code. Link: 
  
 •	To extract the necessary images for the training and testing for the video recording the Python file /data_generation/Extract_TEyeD.py should be run.
 
@@ -118,6 +120,8 @@ python -u run.py \
 **Testing run script:**
 
 •	The check point given by the Author is stored at Results/pretrain_sem/results/last.pt
+
+I have provoded that pth file. you can download it and use it in code. Link:
 
 •	To be able to run and test code the following command must to executed. The entry script is the run.py.
 
