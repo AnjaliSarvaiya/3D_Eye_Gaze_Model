@@ -121,7 +121,7 @@ python -u run.py \
 
 •	The check point given by the Author is stored at Results/pretrain_sem/results/last.pt
 
-I have provoded that pth file. you can download it and use it in code. Link:
+I have provoded that pth file. you can download it and use it in code. Link: https://drive.google.com/file/d/1XznFa7kyQvzoAZwo3pgMCNcXVfFOmnZR/view?usp=sharing
 
 •	To be able to run and test code the following command must to executed. The entry script is the run.py.
 
