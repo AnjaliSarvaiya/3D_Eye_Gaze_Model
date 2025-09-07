@@ -151,7 +151,7 @@ python viz_from_testh5.py \
   --out_dir " ./Results/pretrained_sem/results/visual" \
   --limit 32 \
   --cols 4 \
-  --overlay pred \ 
+  --overlay pred 
   --origin pred 
   
 •	It will save the visual grid in  /Results/pretrained_sem/results/visual folder.
