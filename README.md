@@ -6,39 +6,8 @@
 
 conda create -n 3d_gaze python=3.7.1
 
-pip install ipython ipykernel
-
-pip install ipympl
-
-pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-
-pip install h5py
-
-pip install -U scikit-learn
-
-pip install scikit-image
-
-pip install matplotlib
-
-pip install opencv-python
-
-pip install tensorboardX
-
-pip install imgaug
-
-pip install faiss-gpu
-
-pip install pytorch3d
-
-pip install pytransform3d
-
-pip install einops
-
-pip install wandb
-
-pip install timm
-
-pip install pandas
+• To install required python library in your conda environment run the command
+pip install -r requirements.txt
 
 **Dataset Preparation**
 •	First download the code, and the dataset.
