@@ -1,0 +1,29 @@
+# requirements.txt
+# If you don't have CUDA 11.0, comment the cu110 lines and install CPU builds:
+# torch==1.7.1
+# torchvision==0.8.2
+# torchaudio==0.7.2
+
+--find-links https://download.pytorch.org/whl/torch_stable.html
+
+ipython
+ipykernel
+ipympl
+torch==1.7.1+cu110
+torchvision==0.8.2+cu110
+torchaudio==0.7.2
+h5py
+scikit-learn
+scikit-image
+matplotlib
+opencv-python
+tensorboardX
+imgaug
+faiss-gpu
+pytorch3d
+pytransform3d
+einops
+wandb
+timm
+pandas
+
