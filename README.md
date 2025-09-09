@@ -65,6 +65,7 @@ python visualization.py \
   
   
 •	It will save the visual grid in  /Results/pretrained_sem/results/visual folder.
+
 •	The visulization of eye with predicted mask and gaze vector is stored in Results/pretrained_sem/results/Visual folder. Also the metrics are stored in Results/pretrained_sem/results folder in  test_results_summary.json file
 <img width="3164" height="5237" alt="qual_grid_32_pred_pred" src="https://github.com/user-attachments/assets/09862a06-ef2e-41ea-bd8e-3baef51f1cfa" />
 
