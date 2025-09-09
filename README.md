@@ -17,7 +17,7 @@ pip install -r requirements.txt
 •	After downloading the dataset keep the videos in Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/VIDEOS/ and
  keep the annotations in  Datasets/TEyeD/TEyeDSSingleFiles/Dikablis/ANNOTATIONS/
 
- To reproduce the results, I have provided the Datasets folder which contains the dataset set videos and annotations. you can download Datasets folder from this link and use it in code. Link: https://mega.nz/folder/CQ91hKoI#5VJAFykpGniuJoxuZD6lNQ
+ To produce the results, I have provided the Datasets folder which contains the dataset set videos and annotations. you can download Datasets folder from this link and use it in code. Link: https://mega.nz/folder/CQ91hKoI#5VJAFykpGniuJoxuZD6lNQ
  
 •	To extract the necessary images for the training and testing for the video recording the Python file /data_generation/Extract_TEyeD.py should be run.
 
