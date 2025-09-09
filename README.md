@@ -36,78 +36,22 @@ python createDataloaders_baseline.py \
 •	Finally, you can customize and change arguments in args_maker.py file, like the optimizer, learning rates, weight decay, weight for losses, activate different heads (segmentation or rendering) etc.
 
 **Training run script:**
-
+•	To set the hyperparameter and the required path for training config_train.py file is used. 
 •	To be able to run and train code the following command must to executed. The entry script is the run.py.
 
-python -u run.py \
---exp_name='3D_eye_framework' \
---path_data=". /Datasets/All" \
---path2MasterKey=". /Datasets/MasterKey" \
---path_exp_tree=". /Results" \
---cur_obj='TEyeD' \
---use_pkl_for_dataload True \
---train_data_percentage=1.0 \
---random_dataloader \
---aug_flag=1 \
---reduce_valid_samples=0 \
---workers=8 \
---remove_spikes=0 \
---epochs=2 \
---batches_per_ep=4000 \
---lr=8e-3 \
---wd=2e-2 \
---batch_size=1 \
---frames=4 \
---early_stop_metric=3D \
---early_stop=20 \
---model='res_50_3' \
---net_rend_head \
---net_simply_head_tanh=1 \
---temp_n_angles=100 \
---temp_n_radius=50 \
---loss_w_ellseg=0.0 \
---loss_rend_vectorized \
---loss_w_rend_gt_2_pred=0.15 \
---loss_w_rend_pred_2_gt=0.15 \
---loss_w_rend_pred_2_gt_edge=0.0 \
---loss_w_rend_diameter=0.0 \
---loss_w_supervise=1 \
---loss_w_supervise_gaze_vector_3D_L2=2.5 \
---loss_w_supervise_gaze_vector_3D_cos_sim=2.5 \
---loss_w_supervise_gaze_vector_UV=0.0 \
---loss_w_supervise_eyeball_center=0.15 \
---loss_w_supervise_pupil_center=0.0 \
---do_distributed=0 \
---local_rank=0 \
---use_GPU=1 \
---mode='one_vs_one' \
---dropout=0 \
---use_ada_instance_norm_mixup=0
+python train.py
 
 •	After running this script the .pth file is saved in Results/results folder.
 
 **Testing run script:**
+•	To set the hyperparameter and the required path for testing config_test.py file is used. 
+•	The check point given by the Author should be stored at Results/pretrain_sem/results/last.pt 
 
-•	The check point given by the Author is stored at Results/pretrain_sem/results/last.pt
-
-I have provoded that pth file. you can download it and use it in code. Link: https://drive.google.com/file/d/1XznFa7kyQvzoAZwo3pgMCNcXVfFOmnZR/view?usp=sharing
+I have provided that pth file given by the Author. you can download it and use it in code. Link: https://drive.google.com/file/d/1XznFa7kyQvzoAZwo3pgMCNcXVfFOmnZR/view?usp=sharing
 
 •	To be able to run and test code the following command must to executed. The entry script is the run.py.
 
-python -u run.py \
---path_data=". /Datasets/All" \  
---path2MasterKey=". /Datasets/MasterKey" \  
---path_exp_tree=". /Results" \  
---use_pkl_for_dataload True \  
---only_test 1 \   
---weights_path=".Results/pretrained_sem/results/last.pt" \  
---model="res_50_3"\   
---exp_name="pretrained_sem"  \  
---use_GPU=1 \   
---net_rend_head \   
---loss_w_rend_pred_2_gt_edge 1 \   
---batches_per_ep 50 \   
---save_test_maps \
+python test.py
 
 •	After running this code it will save test_results.h5 file in Results/pretrained_sem/results folder
 
@@ -115,7 +59,7 @@ python -u run.py \
 
 •	To be able to run and visualization code the following command must to executed. 
 
-python viz_from_testh5.py \
+python visualization.py \
   --test_h5 ". /Results/pretrained_sem/results/test_results.h5" \
   --out_dir " ./Results/pretrained_sem/results/visual" 
   
