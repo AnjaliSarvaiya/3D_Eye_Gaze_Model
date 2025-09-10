@@ -1,0 +1,17 @@
+{
+  "rendering_iou": 0.8659308820269671,
+  "rendering_iou_mean": 0.8659308820269671,
+  "score_mean": 0.8659308820269694,
+  "masked_rendering_iou": 0.8788675237940761,
+  "masked_rendering_iou_mean": 0.8788675237940761,
+  "pupil_c_px_dst_mean": 0.97236567735672,
+  "norm_pupil_c_px_dst_mean": 0.24309141933918,
+  "eyeball_c_px_dist_mean": 3.97261118888855,
+  "norm_eyeball_c_px_dist_mean": 0.9931527972221375,
+  "gaze_3D_ang_deg_mean": 2.1851117610931396,
+  "gaze_3D_xy_ang_deg_mean": 9.700448989868164,
+  "loss/rend_total_mean": 4.663523072712571,
+  "loss/rend_iris_pred_2_gt_edge_mean": 3.817693245585993,
+  "loss/rend_pupil_pred_2_gt_edge_mean": 0.8458298300312104,
+  "loss_mean": 4.663523072712571
+}
