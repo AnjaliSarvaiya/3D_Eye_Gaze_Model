@@ -55,6 +55,9 @@ python test.py
 
 •	After running this code it will save test_results.h5 file in Results/pretrained_sem/results folder
 
+•	for testing the results, you can download the test_results.h5 file from this link: https://drive.google.com/file/d/1qL9nGS2zt-Zd6_UhnggsJfEIHu6CzOzF/view?usp=sharing
+
+
 **Visualization on Testing Data:**
 
 •	To be able to run and visualization code the following command must to executed. 
