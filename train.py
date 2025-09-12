@@ -98,7 +98,7 @@ def create_experiment_folder_tree(paths_from_cfg: dict, args_from_cfg: dict):
 
 
 # -----------------------------------------------------------------------------#
-# Core training code (same as your main.py, but reads args/paths from config)
+# Core training code( reads args/paths from config)
 # -----------------------------------------------------------------------------#
 def train(args, path_dict, validation_mode=False, test_mode=False):
 
