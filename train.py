@@ -245,7 +245,7 @@ def train_validation_loops(net, net_dict, logger, args, path_dict, writer,
             clean_corrupt_entries(valid_obj, "valid")
             clean_corrupt_entries(test_obj, "test")
 
-    # diagnostics + subselect (unchanged)
+    # diagnostics + subselect
     print('Starting the procedure of removing unwanted train-val video overlap...')
     train_vid_ids = list(np.unique(train_obj.imList[:, :, 1]))
     print('Sub-selecting first 100k test frames')
