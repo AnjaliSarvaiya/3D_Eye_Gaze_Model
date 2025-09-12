@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# test_only.py
+
 import os, json, pickle
 import torch
 from torch.utils.data import DataLoader
