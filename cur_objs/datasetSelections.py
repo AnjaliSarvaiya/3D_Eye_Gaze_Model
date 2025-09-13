@@ -1,11 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-This started as a copy of https://bitbucket.org/RSKothari/multiset_gaze/src/master/ 
-with additional changes and modifications to adjust it to our implementation. 
-
-Copyright (c) 2021 Rakshit Kothari, Aayush Chaudhary, Reynold Bailey, Jeff Pelz, 
-and Gabriel Diaz
-"""
 
 import pickle as pkl
 
